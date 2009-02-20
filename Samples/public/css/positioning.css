@@ -1,0 +1,8 @@
+body { font-family: sans-serif; line-height: 1.4; }
+#page { margin: 0 auto; width: 80%; max-width: 1000px; min-width: 600px; height: 100%; min-height: 400px; padding: 1em; }
+#content { margin-left: 150px; }
+#flash { padding: 0.5em; margin-bottom: 1em; }
+#sidebar { float: left; margin-right: 1em; padding: 0.5em; }
+#sidebar ul{ list-style-type: none; margin: 0; }
+#sidebar li a { display: block; text-decoration: none; }
+

@@ -1,0 +1,7 @@
+<?
+
+class doc extends C
+{
+}
+
+?>

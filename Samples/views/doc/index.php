@@ -51,14 +51,14 @@ class hello extends C
 </li>
 <li><p>If you want pretty URLs, create a file .htaccess in your webroot with the following code</p>
 <pre>
-<IfModule mod_rewrite.c>
-    RewriteEngine On 
-    RewriteCond %{DOCUMENT_ROOT}/public%{REQUEST_URI} -f
-    RewriteRule !(^index\.php|^public/) /public%{REQUEST_URI} [L]
-    RewriteCond %{REQUEST_FILENAME} !-d
-    RewriteCond %{REQUEST_FILENAME} !-f
-    RewriteRule ^(.*)$ index.php?url=$1 [QSA,L]
-</IfModule>
+&lt;IfModule mod_rewrite.c&gt;
+  RewriteEngine On 
+  RewriteCond %{DOCUMENT_ROOT}/public%{REQUEST_URI} -f
+  RewriteRule !(^index\.php|^public/) /public%{REQUEST_URI} [L]
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteRule ^(.*)$ index.php?url=$1 [QSA,L]
+&lt;/IfModule&gt;
 </pre>
 </li>
 <li>navigate to http://host/hello/world</li>

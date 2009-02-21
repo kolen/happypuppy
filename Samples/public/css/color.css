@@ -1,11 +1,12 @@
 body { background-color: #0055AA; }
-a:hover{ background-color: #BBBBFF; }
+a { text-decoration: none; }
+a:hover{ text-decoration: underline; }
 #page { background-color: white; border: 0.2em solid black; padding: 1em; }
-h1 { background-color: #DDDDFF; border-top: 2px solid #0055AA; }
 h2 { background-color: #F0F0FF; border-top: 1px solid #0055AA; }
-h2 { background-color: #F0F0FF; border-top: 1px solid #0055AA; }
+h3 { background-color: #F0F0FF; border-top: 1px solid #0055AA; }
 #flash { background-color: #FFFFCC; border: 2px dashed black; }
-#sidebar { border: dashed 3px blue; }
+#sidebar { border: solid 3px blue; }
 #sidebar li a { color: black; border: 1px solid transparent; }
-#sidebar li a:hover { border: 1px solid black; }
-
+#sidebar li a:hover { border: 1px solid black; background-color: #F0F0FF; }
+pre { background-color: #CCCCCC; border-left: 5px solid #0000AA; }
+.example { border: 2px dashed blue; background-color: #FAFAFF; }

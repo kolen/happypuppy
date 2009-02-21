@@ -14,6 +14,7 @@
 <div id='page'>
 <h1>Happy Puppy</h1>
 <div id='sidebar'>
+<img src="/images/happypuppy.jpg" alt="Happy Puppies" />
 <ul>
 <li><?= link_to("/doc", "Home") ?></li>
 <li><?= link_to("/test", "Basics") ?></li>

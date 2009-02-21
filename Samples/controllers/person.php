@@ -33,7 +33,7 @@ class person extends C
   public function show($id)
   {
     // $this->person = personmodel::get($id);
-    $this->person = array('id'=>22, 'name'=>'Fake Person');
+    $this->person = array('id'=>$id, 'name'=>'Fake Person');
   }
   public function destroy()
   {
@@ -58,7 +58,7 @@ class person extends C
   public function edit($id)
   {
     // $this->person = personmodel::get($id);
-    $this->person = array('id'=>22, 'name'=>'Fake Person');
+    $this->person = array('id'=>$id, 'name'=>'Fake Person'.' '.$id);
   }
   public function update()
   {

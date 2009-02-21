@@ -70,7 +70,7 @@ echo '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
 }
 
 function R($pattern, $controller, $action, $http_method){
-  NiceDog::getInstance()->add_url($pattern, $controller, $action, $http_method);
+  HappyPuppy::getInstance()->add_url($pattern, $controller, $action, $http_method);
 }
 
 class HappyPuppy
@@ -185,7 +185,7 @@ class HappyPuppy
   {
     if(self::$instance == NULL)
     {
-      self::$instance = new NiceDog();
+      self::$instance = new HappyPuppy();
     }
     return self::$instance;
   }

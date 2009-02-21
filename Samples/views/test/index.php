@@ -1,5 +1,5 @@
 <h2>The Basics</h2>
-<p>All (except one) of these examples are in the 'test' controller, found in /controllers/test.php
+<p>All of these examples are in the 'test' controller, found in /controllers/test.php
 <div class="example">
 <p><?= link_to('/test/hello', 'Hello World'); ?></p>
 <pre>

@@ -158,7 +158,7 @@ class HappyPuppy
     } }
     foreach($to_run as $filtered_action)
     {
-      call_user_func(array($klass , $filtered_action));
+      call_user_func(array($klass , $filtered_action), $action);
     }
   }
 

@@ -41,16 +41,16 @@ function Run()
   try { HappyPuppy::getInstance()->dispatch(); } catch (Exception $e)
   {
     if (__DEBUG__==true) {
-echo '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
   <head>
     <title>Error!</title>
   </head>
   <body>
-    <h1>Caught exception: <?= $e->getMessage(); ?></h1>
-    <h2>File: <?= $e->getFile()?></h2>
-    <h2>Line: <?= $e->getLine()?></h2>
+    <h1>Caught exception: <?php print $e->getMessage(); ?></h1>
+    <h2>File: <?php print $e->getFile()?></h2>
+    <h2>Line: <?php print $e->getLine()?></h2>
     <h3>Trace</h3>
     <pre>
       <?php print_r ($e->getTraceAsString()); ?>
@@ -64,7 +64,7 @@ echo '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
       <?php debug_print_backtrace (); ?>
     </pre>
   </body>
-</html>';
+</html><?php
     }
   }
 }

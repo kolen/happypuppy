@@ -40,6 +40,7 @@ function Run()
 {
   try { HappyPuppy::getInstance()->dispatch(); } catch (Exception $e)
   {
+    header('HTTP/1.1 500 Internal Server Error');
     if (__DEBUG__==true) {
 ?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">

@@ -52,17 +52,11 @@ function Run()
     <h2>File: <?php print $e->getFile()?></h2>
     <h2>Line: <?php print $e->getLine()?></h2>
     <h3>Trace</h3>
-    <pre>
-      <?php print_r ($e->getTraceAsString()); ?>
-    </pre>
+    <pre><?php print_r ($e->getTraceAsString()); ?></pre>
     <h3>Exception Object</h3>
-    <pre>
-      <?php print_r ($e); ?>
-    </pre>
+    <pre><?php print_r ($e); ?></pre>
     <h3>Var Dump</h3>
-    <pre>
-      <?php debug_print_backtrace (); ?>
-    </pre>
+    <pre><?php debug_print_backtrace (); ?></pre>
   </body>
 </html><?php
     }
